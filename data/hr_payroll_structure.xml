@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- ***** CREATION DE LA STRUCTURE SALARIAL ***** -->
+
+        <!-- Structure de base -->
+        <record id="sibic_structure_base" model="hr.payroll.structure">
+            <field name="code">BASE</field>
+            <field name="name">Structure de base</field>
+            <field eval="[(6, 0, [ref('hr_rule_taxable'),ref('hr_rule_brut')])]" name="rule_ids"/>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <!-- <field name="company_id" ref="base.main_company"/> -->
+        </record>
+
+        <!-- Structure Employée (mensuel)-->
+        <record model="hr.payroll.structure" id="sibic_structure_employee">
+            
+            <field name="name">Structure Employée (Mensuel)</field>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <field name="code">STEPM</field>
+            <!-- <field name="default_structure">True</field> -->
+            <!-- <field name="parent_id" ref="sibic_structure_base"/> -->
+            <field name="rule_ids" eval='[
+                (4,hr_rule_heure_par_jour),
+                (4,hr_rule_basic_mensuel),
+                (4,hr_rule_contract_begin),
+                (4,hr_rule_unpaid),
+                (4,hr_rule_unpaid_hour),
+                (4,rule_salaire_rim),
+                (4,hr_rule_im),
+                (4,hr_rule_coefficient_prorata_m),
+                (4,rule_iep),
+                (4,rule_prime_responsabilite),
+                (4,rule_nuisance),
+                (4,rule_danger),
+                (4,rule_prime_rendement_idv),
+                (4,rule_chnagement_residence),
+                (4,rule_conge_paye),
+                (4,hr_rule_cm),
+                (4,hr_rule_maternite),
+                (4,rule_heure_sup_50),
+                (4,rule_heure_sup_75),
+                (4,rule_heure_sup_100),
+                (4,rule_indemnite_conge),
+                (4,rule_ifsp),
+                (4,rule_ifs),
+                (4,rule_trsptc10),
+                (4,rule_trsptc15),
+                (4,rule_trsptc25),
+                (4,rule_astr),
+                (4,rule_ensg),
+                (4,rule_gesres),
+                (4,rule_actcont),
+                (4,rule_doc),
+                (4,rule_inspc),
+                (4,rule_avc_salaire),
+                (4,rule_prime_rendement_col),
+                (4,rule_secu_social),
+                (4,rule_retenue_mutuelle),
+                (4,rule_cacobath),
+                (4,rule_prime_panier),
+                (4,rule_prime_transport),
+                (4,hr_rule_prime_tel),
+                (4,rule_irg),
+                (4,rule_irg_10),
+                (4,rule_irg_15),
+                (4,rule_frais_mission),
+                (4,rule_frais_deplacement),
+                (4,rule_frais_hbr),
+                (4,rule_prime_8mars),
+                (4,hr_rule_pret),
+                (4,hr_rule_alomat),
+                (4,rule_ifri),
+                (4,rule_resto),
+                (4,rule_salaire_unique),
+                (4,hr_rule_acompte),
+                (4,hr_rule_remb_pret),
+                (4,hr_rule_allo_enf300),
+                (4,hr_rule_allo_enf600),
+                (4,rule_prime_exceptionnelle),
+                (4,rule_idv15),
+                (4,rule_izcv),
+                (4,rule_zone1),
+                (4,rule_zone2),
+                (4,rule_licen),
+                (4,rule_chom),
+                (4,rule_veh_par),
+                (4,rule_kilo),
+                (4,rule_etrg),
+                (4,rule_reg_actcont),
+                (4,rule_reg_doc),
+                (4,rule_reg_inspc),
+                (4,rule_reg_avc_salaire),
+                (4,rule_reg_idv15),
+                (4,hr_rule_reg_prime_tel),
+                (4,rule_reg_resto),
+                (4,rule_reg_secu_social),
+                (4,rule_reg_cacobath),
+                (4,rule_reg_prime_panier),
+                (4,rule_reg_prime_transport),
+                (4,rule_reg_irg),
+                (4,rule_reg_irg_10),
+                (4,rule_reg_irg_15),
+                (4,rule_reg_retenue_mutuelle),
+                (4,rule_reg_frais_deplacement),
+                (4,rule_reg_frais_mission),
+                (4,rule_reg_veh_par),
+                (4,rule_reg_kilo),
+                (4,rule_reg_frais_hbr),
+                (4,rule_reg_prime_8mars),
+                (4,rule_reg_salaire_unique),
+                (4,hr_rule_reg_acompte),
+                (4,hr_rule_reg_alomat),
+                (4,hr_rule_reg_pret),
+                (4,hr_rule_reg_remb_pret),
+                (4,hr_rule_reg_allo_enf300),
+                (4,hr_rule_reg_allo_enf600),
+                (4,rule_reg_ifri),
+                (4,rule_reg_izcv),
+                (4,rule_reg_zone1),
+                (4,rule_reg_zone2),
+                (4,rule_reg_licen),
+                (4,rule_reg_chom),
+                (4,rule_reg_prime_rendement_col),
+                (4,rule_reg_prime_exceptionnelle),
+                (4,rule_reg_etrg),
+                (4,rule_salaire_reg_base),
+                (4,rule_salaire_rabsj),
+                (4,rule_salaire_rabsh),
+                (4,rule_salaire_reg_conge_maladie),
+                (4,rule_salaire_reg_conge_maternite),
+                (4,rule_salaire_reg_iep),
+                (4,rule_salaire_reg_responsabilite),
+                (4,rule_salaire_reg_nuisance),
+                (4,rule_salaire_reg_danger),
+                (4,rule_salaire_reg_prind),
+                (4,rule_salaire_reg_changres),
+                (4,rule_salaire_reg_conge_paye),
+                (4,rule_salaire_reg_sup50),
+                (4,rule_salaire_reg_sup75),
+                (4,rule_salaire_reg_sup100),
+                (4,rule_salaire_reg_indconge),
+                (4,rule_salaire_reg_ifsp),
+                (4,rule_salaire_reg_ifs),
+                (4,rule_reg_trsptc10),
+                (4,rule_reg_trsptc15),
+                (4,rule_reg_trsptc25),
+                (4,rule_reg_astr),
+                (4,rule_reg_ensg),
+                (4,rule_reg_gesres),
+                (4,hr_rule_salaire_poste),
+                (4,hr_rule_salaire_impo_irg),
+                (4,hr_rule_salaire_b_i),
+                (4,rule_montant_conge),
+                (4,rule_caisse),
+                (4,rule_reg_caisse),
+                (4,rule_appren),
+                (4,rule_reg_appren),
+                (4,rule_prime_objectif),
+                (4,rule_reg_prime_objectif),
+                
+                (4,rule_prime_Productivite),
+                (4,rule_reg_prime_Productivite),
+                (4,rule_indemnite_sujection),
+                (4,rule_reg_indemnite_sujection),
+                (4,rule_prime_salissure),
+                (4,rule_reg_prime_salissure),
+                (4,rule_prime_encouragement),
+                (4,rule_reg_prime_encouragement),
+                (4,rule_indemnite_interim),
+                (4,rule_reg_indemnite_interim),
+                (4,rule_prime_scolarite),
+                (4,rule_reg_prime_scolarite),
+                (4,rule_prime_naissance),
+                (4,rule_reg_prime_naissance),
+                (4,rule_prime_mouton),
+                (4,rule_reg_prime_mouton),
+                (4,rule_prime_ramadhan),
+                (4,rule_reg_prime_ramadhan),
+                (4,rule_retenu_salaire),
+                (4,rule_reg_retenu_salaire),
+                (4,rule_retenu_pret),
+                (4,rule_reg_retenu_pret),
+                (4,rule_avance_salaire),
+                (4,rule_reg_avance_salaire),
+                (4,rule_depart_retraite),
+                (4,rule_ifspp),
+                (4,hr_rule_brut),
+                (4,hr_rule_taxable),
+                (4,rule_prime_quart_2_8),
+                (4,rule_prime_quart_3_8),
+                (4,rule_reg_prime_quart_2_8),
+                (4,rule_reg_prime_quart_3_8),
+                (4,rule_debour),
+                (4,rule_stc),
+                (4,rule_secu_sle_25),
+                (4,rule_secu_sle_16),
+                (4,rule_secu_sle_06),
+                (4,rule_secu_sle_05_1),
+                (4,rule_secu_sle_05_2),
+                (4,rule_prime_13eme_mois),
+                (4,rule_reg_prime_13eme_mois)
+
+                
+                ]'/> 
+        </record>
+
+        <!-- Structure Employée (jour) -->
+        <record model="hr.payroll.structure" id="sibic_structure_employee_jour">
+            
+            <field name="name">Structure Employée (jour)</field>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <field name="code">STEPJ</field>
+            <!-- <field name="parent_id" ref="sibic_structure_base"/> -->
+            <field name="rule_ids" eval='[]'/>
+        </record>
+
+        <!-- Structure Employée (heure) -->
+        <record model="hr.payroll.structure" id="sibic_structure_employee_heure">
+            
+            <field name="name">Structure Employée (heure)</field>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <field name="code">STEPH</field>
+            <!-- <field name="parent_id" ref="sibic_structure_base"/> -->
+            <field name="rule_ids" eval='[]'/>
+        </record>
+
+        <!-- Structure consultant (heure) -->
+        <record model="hr.payroll.structure" id="sibic_consultant_heure">
+            
+            <field name="name">Structure consultant (heure)</field>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <field name="code">STCH</field>
+            <!-- <field name="parent_id" ref="sibic_structure_base"/> -->
+            <field name="rule_ids" eval='[]'/>
+        </record>
+
+        <!-- Structure consultant (jour) -->
+        <record model="hr.payroll.structure" id="sibic_consultant_jour">
+            
+            <field name="name">Structure consultant (jour)</field>
+            <field name="type_id" ref="hr_contract.structure_type_employee"/>
+            <field name="code">STCJ</field>
+            <!-- <field name="parent_id" ref="sibic_structure_base"/> -->
+            <field name="rule_ids" eval='[]'/> 
+        </record>
+    
+    
+        
+    </data>
+</odoo>

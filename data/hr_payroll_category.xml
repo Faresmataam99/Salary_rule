@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    
+        <record id="BASIC" model="hr.salary.rule.category">
+            <field name="name">Base</field>
+            <field name="code">BASIC</field>
+        </record>
+
+        <record id="ALW" model="hr.salary.rule.category">
+            <field name="name">Allocation</field>
+            <field name="code">ALW</field>
+        </record>
+
+        <record id="GROSS" model="hr.salary.rule.category">
+            <field name="name">Brut</field>
+            <field name="code">GROSS</field>
+        </record>
+
+        <record id="DED" model="hr.salary.rule.category">
+            <field name="name">Déductible</field>
+            <field name="code">DED</field>
+        </record>
+
+
+        <record id="NET" model="hr.salary.rule.category">
+            <field name="name">Net</field>
+            <field name="code">NET</field>
+        </record>
+
+        <record id="category_cot" model="hr.salary.rule.category">
+            <field name="name">Cotisable</field>
+            <field name="code">COT</field>
+            <field name="parent_id" ref="ALW"/>
+        </record>
+
+        <record id="category_impo" model="hr.salary.rule.category">
+            <field name="name">Imposable</field>
+            <field name="code">IMP</field>
+            <field name="parent_id" ref="ALW"/>
+        </record>
+
+
+        <record id="category_impo_10" model="hr.salary.rule.category">
+            <field name="name">Imposable 10%</field>
+            <field name="code">IMP10</field>
+            <field name="parent_id" ref="ALW"/>
+        </record>
+
+        <record id="category_impo_15" model="hr.salary.rule.category">
+            <field name="name">Imposable 15%</field>
+            <field name="code">IMP15</field>
+            <field name="parent_id" ref="ALW"/>
+        </record>
+
+        <record id="HJ" model="hr.salary.rule.category">
+            <field name="name">Heure par jour</field>
+            <field name="code">HJ</field>
+        </record>
+
+        <record id="INTERM" model="hr.salary.rule.category">
+            <field name="name">Intermédiaire</field>
+            <field name="code">INTERM</field>
+        </record>
+
+        <record id="COEFF" model="hr.salary.rule.category">
+            <field name="name">Coefficient</field>
+            <field name="code">COEFF</field>
+        </record>
+
+        <record id="COMP" model="hr.salary.rule.category">
+            <field name="name">Contribution de la société</field>
+            <field name="code">COMP</field>
+        </record>
+    </data>
+</odoo>

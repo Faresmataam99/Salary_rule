@@ -1,0 +1,181 @@
+"id","code","name","input_id:id"
+input_heure_sup_100,HS100,"Heure Supplémentaire 100% (Heures)",rule_heure_sup_100
+input_heure_sup_75,HS75,"Heure Supplémentaire 75% (Heures)",rule_heure_sup_75
+input_heure_sup_50,HS50,"Heure Supplémentaire 50% (Heures)",rule_heure_sup_50
+
+input_prime_8mars,P8M,"Prime 8 Mars (DA)",rule_prime_8mars
+input_reg_prime_8mars,R_P8M,"Régularisation de prime 8 Mars (DA)",rule_reg_prime_8mars
+
+
+input_prime_exceptionnelle,EXEP,"Prime Exceptionnelle (DA / Mois)",rule_prime_exceptionnelle
+input_reg_prime_exceptionnelle,R_EXEP,"Régularisation de prime Exceptionnelle (DA)",rule_reg_prime_exceptionnelle
+
+input_prime_rendement_coll,PRC,"Prime de rendement collectif (DA / Mois)",rule_prime_rendement_col
+input_reg_prime_rendement_coll,R_PRC,"Régularisation de prime de rendement collectif (DA)",rule_reg_prime_rendement_col
+input_prime_rendement_idv,PRI,"Prime de rendement individuel (DA / Mois)",rule_prime_rendement_idv
+
+input_indemnite_conge,INDC,"Indemnité de congé (DA)",rule_indemnite_conge
+input_changement_residence,ICR,"Indemnité Changement de Résidence (DA / Mois)",rule_chnagement_residence
+
+input_reg_ifri,R_IFRI,"Régularisation d'indemnité de frais de résidence et d'isolement (DA)",rule_reg_ifri
+input_reg_izcv,R_IZCV,"Régularisation d'indemnité de zone et de conditions de vie (DA)",rule_reg_izcv
+
+input_acomp,ACMP,"Acompte (DA)",hr_rule_acompte
+input_reg_acomp,R_ACMP,"Régularisation Acompte (DA)",hr_rule_reg_acompte
+input_remp,REMP,"Remboursement de prêt (DA)",hr_rule_remb_pret
+input_reg_remp,R_REMP,"Régularisation de remboursement de prêt (DA)",hr_rule_reg_remb_pret
+
+input_resto,RESTO,"Frais de restauration (DA / Mois)",rule_resto
+input_reg_resto,R_RESTO,"Régulatrisation de frais de restauration (DA)",rule_reg_resto
+
+input_trsptc10,TRPST10,"Indemnité travail posté a 10% (05h à 21h) (DA / Mois)",rule_trsptc10
+input_trsptc15,TRPST15,"Indemnité travail posté a 10% + 5% (21h à 00h) (DA / Mois)",rule_trsptc15
+input_trsptc25,TRPST25,"Indemnité travail posté a 10% + 15% (00h à 15h) (DA / Mois)",rule_trsptc25
+
+input_avsal,AVSAL,"Avance sur salaire (DA)",rule_avc_salaire
+input_reg_avsal,R_AVSAL,"Régularisation d'avance sur salaire (DA)",rule_reg_avc_salaire
+
+input_idv15,IDV15,"Indemnité de départ volontaire (DA)",rule_idv15
+input_reg_idv15,R_IDV15,"Régularisation d'indemnité de départ volontaire (DA)",rule_reg_idv15
+input_fdep,FDEP,"Frais de déplacement (DA / Mois)",rule_frais_mission
+input_reg_fdep,R_FDEP,"Régularisation de frais de déplacement (DA)",rule_reg_frais_mission
+
+input_reg_veh_par,R_IVP,"Régularisation d'indemnité de véhicule particulier (DA)",rule_reg_veh_par
+input_reg_etrg,R_ETRG,"Régularisation d'allocation salarié de nationalité étrangère (DA)",rule_reg_etrg
+
+input_frms,FRMS,"Frais de mission (DA / Mois)",rule_frais_deplacement
+nput_reg_frms,R_FRMS,"Régularisation de frais de mission (DA)",rule_reg_frais_deplacement
+
+input_ik,IK,"Indemnité kilométrique (DA / Mois)",rule_kilo
+input_reg_ik,R_IK,"Régularisation d'indemnité kilométrique (DA)",rule_reg_kilo
+
+input_hebr,HEBR,"Frais d'hébergement (DA / Mois)",rule_frais_hbr
+input_reg_hebr,R_HEBR,"Régularisation de frais d'hébergement (DA)",rule_reg_frais_hbr
+input_alomat,ALOMAT,"Allocation maternité (DA / Mois)",hr_rule_alomat
+input_reg_alomat,R_ALOMAT,"Régularisation d'llocation maternité (DA)",hr_rule_reg_alomat
+input_pret,PRET,"Prêt (DA)",hr_rule_pret
+input_reg_pret,R_PRET,"Régularisation de prêt (DA)",hr_rule_reg_pret
+
+input_licen,LICEN,"Indemnité de licenciement (DA)",rule_licen
+input_reg_licen,R_LICEN,"Régularisation d'indemnité de licenciement (DA)",rule_reg_licen
+
+input_chom,CHOM,"Allocation chômage (DA)",rule_chom
+input_reg_chom,R_CHOM,"Réguarisation d'allocation chômage (DA)",rule_reg_chom
+
+input_alof_un,ALOF1,"Allocation familliale (enfant à 300da) (DA / Mois)",hr_rule_allo_enf300
+input_reg_alof_un,R_ALOF1,"Régularisation d'allocation familliale (enfant à 300da) (DA)",hr_rule_reg_allo_enf300
+input_alof_deux,ALOF2,"Allocation familliale (enfant à 600da) (DA / Mois)",hr_rule_allo_enf600
+input_reg_alof_deux,R_ALOF2,"Régularisation d'allocation familliale (enfant à 600da) (DA)",hr_rule_reg_allo_enf600
+input_isuq,ISUQ,"Indemnité pour salaire unique (IPSU) (DA / Mois)",rule_salaire_unique
+input_reg_isuq,R_ISUQ,"Régularisation d'indemnité pour salaire unique (IPSU) (DA)",rule_reg_salaire_unique
+
+input_reg_basem,R_BASE,"Régularisation de salaire de base (DA)",rule_salaire_reg_base
+
+input_reg_absj,R_ABS,"Régularisation d'absence jours (DA)",rule_salaire_rabsj
+input_reg_absh,R_ABSH,"Régularisation d'absence heures (DA)",rule_salaire_rabsh
+input_reg_im,R_IM,"Régularisation de congé impayé (DA)",rule_salaire_rim
+input_reg_maladie,R_CM,"Régularisation de congé maladie (DA)",rule_salaire_reg_conge_maladie
+input_reg_maternite,R_CMM,"Régularisation de congé maternité (DA)",rule_salaire_reg_conge_maternite
+
+input_reg_irg,R_IRG,"Régularisation d'impot sur le revenus global (IRG) (DA)",rule_reg_irg
+input_reg_irgc,R_IRGC,"Régularisation d'IRG consultant (DA)",rule_reg_irg10
+input_reg_retmut,R_RTMU,"Régularisation de retenue mutuelle (DA)",rule_reg_retenue_mutuelle
+input_reg_irg10,R_IRG10,"Régularisation d'IRG 10% (DA)",rule_reg_irg_10
+input_reg_irg15,R_IRG15,"Régularisation d'IRG 15% (DA)",rule_reg_irg_15
+
+input_reg_iep,R_IEP,"Régularisation de l'IEP (DA)",rule_salaire_reg_iep
+
+input_reg_tel,R_TEL,"Régularisation de prime de téléphone (DA)",hr_rule_reg_prime_tel
+
+input_reg_ipan,R_IPAN,"Régularisation d'indemnité de panier (DA)",rule_reg_prime_panier
+input_reg_itrs,R_ITRS,"Régularisation d'indemnité de transport (DA)",rule_reg_prime_transport
+
+input_reg_responsabilite,R_PR,"Régularisation de prime de responsabilité (DA)",rule_salaire_reg_responsabilite
+input_reg_nuisance,R_NUIS,"Régularisation de prime de nuisance (DA)",rule_salaire_reg_nuisance
+nput_reg_danger,R_DANG,"Régularisation de prime de danger (DA)",rule_salaire_reg_danger
+
+
+input_reg_prind,R_PRI,"Régularisation de prime de rendement individuel (DA)",rule_salaire_reg_prind
+
+input_reg_changres,R_ICR,"Régularisation d'indemnité de changement de résidence (DA)",rule_salaire_reg_changres
+
+input_reg_conge_paye,R_CP,"Régularisation de congé payé (DA)",rule_salaire_reg_conge_paye
+
+input_reg_sup50,R_HS50,"Régularisation des HEURES SUP 50% (DA)",rule_salaire_reg_sup50
+input_reg_sup75,R_HS75,"Régularisation des HEURES SUP 75% (DA)",rule_salaire_reg_sup75
+input_reg_sup100,R_HS100,"Régularisation des HEURES SUP 100% (DA)",rule_salaire_reg_sup100
+
+input_reg_indmconge,R_INDC,"Régularisation d'indemnité de congé (DA)",rule_salaire_reg_indconge
+input_reg_ifsp,R_IFSP,"Régularisation de l'IFSP (DA)",rule_salaire_reg_ifsp
+input_reg_ifs,R_IFS,"Régularisation de l'IFS (DA)",rule_salaire_reg_ifs
+
+input_reg_rss,R_SS,"Régularisation de sécurité social (DA)",rule_reg_secu_social
+input_reg_rbath,R_BATH,"Régularisation de cacobath (DA)",rule_reg_cacobath
+
+input_reg_trsptc10,R_TRPST10,"Régularisation d'indemnité travail posté a 10% (05h à 21h) (DA)",rule_reg_trsptc10
+input_reg_trsptc15,R_TRPST15,"Régularisation d'indemnité travail posté a 10% + 5% (21h à 00h) (DA)",rule_reg_trsptc15
+input_reg_trsptc25,R_TRPST25,"Régularisation d'indemnité travail posté a 10% + 15% (00h à 15h) (DA)",rule_reg_trsptc25
+
+input_reg_astr,R_ASTR,"Régularisation d'astreinte et de disponibilité permenenant (DA)",rule_reg_astr
+
+input_reg_ensg,R_ENSG,"Régularisation d'indemnité des activités d'enseignement (DA)",rule_reg_ensg
+
+input_reg_gesres,R_GESRES,"Régularisation d'indemnité de gestion et de responsabilité (DA)",rule_reg_gesres
+
+input_reg_actcont,R_ACTR,"Régularisation d'indemnité des activités de contrôle (DA)",rule_reg_actcont
+input_reg_docu,R_DOCU,"Régularisation d'indemnité de documentation (DA)",rule_reg_doc
+
+input_reg_inspc,R_INSPC,"Régularisation d'indemnité de suivi et d'inspection (DA)",rule_reg_inspc
+
+input_reg_zone1,R_ZONE1,"Régularisation d'indemnité de zone géographique 1 (hauts plateaux) (DA)",rule_reg_zone1
+input_reg_zone2,R_ZONE2,"Régularisation d'indemnité de zone géographique 2 (sud) (DA)",rule_reg_zone2
+
+input_rule_reg_caisse,R_CAIS,"Régularisation de prime de caisse (DA)",rule_reg_caisse
+input_rule_reg_appren,R_APRN,"Régularisation de prime de maître d'apprentissage (DA)",rule_reg_appren
+
+input_prime_stc,OBJ,"SOLDE TOUT COMPTE (STC)",rule_stc
+
+input_prime_objectif,OBJ,"Prime objectif (DA / Mois)",rule_prime_objectif
+input_reg_prime_objectif,R_OBJ,"Régularisation de prime objectif (DA)",rule_reg_prime_objectif
+
+input_prime_productivite,PROD,"Prime productivite (DA / Mois)",rule_prime_Productivite
+input_reg_prime_productivite,R_PROD,"Régularisation de prime productivite (DA)",rule_reg_prime_Productivite
+
+input_reg_suj,R_SUJ,"Régularisation d'indemnité de sujection(DA)",rule_reg_indemnite_sujection
+
+input_reg_sal,R_SAL,"Régularisation de prime de salissure(DA)",rule_reg_prime_salissure
+
+input_prime_encouragement,ECRG,"Prime encouragement (DA / Mois)",rule_prime_encouragement
+input_reg_prime_encouragement,R_ECRG,"Régularisation de prime encouragement (DA)",rule_reg_prime_encouragement
+
+input_indemnite_interim,ECRG,"Indemnité interim (DA / Mois)",rule_indemnite_interim
+input_reg_indemnite_interim,R_ECRG,"Régularisation d'indemnité interim (DA)",rule_reg_indemnite_interim
+
+input_prime_13eme_mois,M13,"prime 13eme mois (DA / Mois)",rule_prime_13eme_mois
+input_reg_prime_13eme_mois,R_M13,"Régularisation prime 13eme mois (DA)",rule_reg_prime_13eme_mois
+
+input_reg_scol,R_SAL,"Régularisation de prime de scolarité(DA)",rule_reg_prime_scolarite
+
+input_prime_naissance,NAISS,"prime de naissance (DA / Mois)",rule_prime_naissance
+input_reg_prime_naissance,R_NAISS,"Régularisation prime de naissance (DA)",rule_reg_prime_naissance
+
+input_prime_mouton,MOUTON,"prime de mouton (DA / Mois)",rule_prime_mouton
+input_reg_prime_mouton,R_MOUTON,"Régularisation prime de mouton (DA)",rule_reg_prime_mouton
+
+input_prime_ramadhan,RAM,"prime de ramadhan (DA / Mois)",rule_prime_ramadhan
+input_reg_prime_ramadhan,R_RAM,"Régularisation prime de ramadhan (DA)",rule_reg_prime_ramadhan
+
+input_retenu_salaire,RETSA,"Retenu sur salaire (DA / Mois)",rule_retenu_salaire
+input_reg_retenu_salaire,R_RETSA,"Régularisation Retenu sur salaire (DA)",rule_reg_retenu_salaire
+
+input_retenu_pret,RETPRET,"Retenu sur pret (DA / Mois)",rule_retenu_pret
+input_reg_retenu_pret,R_RETPRET,"Régularisation Retenu sur pret (DA)",rule_reg_retenu_pret
+
+input_avance_salaire,AVNSAL,"Avance sur salaire (DA / Mois)",rule_avance_salaire
+input_reg_avance_salaire,R_AVNSAL,"Régularisation Avance sur salaire (DA)",rule_reg_avance_salaire
+
+input_depart_retraite,DEPRET,"Prime de depart en retaraite (DA / Mois)",rule_depart_retraite
+
+input_reg_prime_quart_2_8,R_AVNSAL,"Régularisation prime de quart 2*8 (DA)",rule_reg_prime_quart_2_8
+
+input_reg_prime_quart_3_8,R_AVNSAL,"Régularisation prime de quart 3*8 (DA)",rule_reg_prime_quart_3_8
